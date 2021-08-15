@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title >Data</title>
+
+<style>
+  table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+</style>
+
+  </head>
+  <body>
+
+
+
+      <div class="middle-container" id = "nonFooter">
+        <table class = "table-class" style="width:100%">
+          <tr>
+              <td>Order Date</td>
+              <td>Region</td>
+              <td>City</td>
+              <td>Category</td>
+              <td>Product</td>
+              <td>Quantity</td>
+              <td>Unit Price</td>
+              <td>Total Price</td>
+          </tr>
+          <% fileRows.forEach(function(book) { %>
+            <tr>
+                <td><%-book[0]%></td>
+                <td><%-book[1]%></td>
+                <td><%-book[2]%></td>
+                <td><%-book[3]%></td>
+                <td><%-book[4]%></td>
+                <td><%-book[5]%></td>
+                <td><%-book[6]%></td>
+                <td><%-book[7]%></td>
+            </tr>
+
+          <% }) %>
+        </table>
+
+      </div>
+
+  </body>
+</html>
